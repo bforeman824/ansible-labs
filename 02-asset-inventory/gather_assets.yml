@@ -1,0 +1,12 @@
+---
+- name: Gather asset info from all hosts
+  hosts: assets
+  gather_facts: yes
+  tasks:
+    - name: Print hostname, OS, and uptime
+      debug:
+        msg:
+          - "Hostname: {{ ansible_hostname }}"
+          - "OS: {{ ansible_distribution }} {{ ansible_distribution_version }}"
+          - "IP Address: {{ ansible_default_ipv4.address }}"
+          - "Uptime: {{ ansible_uptime_seconds | int // 3600 }} hours"

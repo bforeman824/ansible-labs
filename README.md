@@ -19,6 +19,7 @@ Rather than uploading outdated or incomplete projects, I’ve chosen to build a 
 | # | Lab Title                  | Summary |
 |--:|----------------------------|---------|
 | 01 | [NTP Setup] | Installs and configures NTP using Ansible on Ubuntu (package + service automation) |
+| 02 | [Asset Management] | Gathers system facts per host |
 
 
 ---
